@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using NetTopologySuite.Geometries;
 
-class Cine
+namespace ef_core_peliculas.Entidades;
+public class Cine
 {
     public int Id { get; set; }
     public string Nombre { get; set; }

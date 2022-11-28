@@ -74,3 +74,7 @@ C:\Users\jose_\Documents\workSpace\ef-core-peliculas\obj\Debug\net7.0\refint\ef-
 C:\Users\jose_\Documents\workSpace\ef-core-peliculas\obj\Debug\net7.0\ef-core-peliculas.pdb
 C:\Users\jose_\Documents\workSpace\ef-core-peliculas\obj\Debug\net7.0\ef-core-peliculas.genruntimeconfig.cache
 C:\Users\jose_\Documents\workSpace\ef-core-peliculas\obj\Debug\net7.0\ref\ef-core-peliculas.dll
+C:\Users\jose_\Documents\workSpace\ef-core-peliculas\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\jose_\Documents\workSpace\ef-core-peliculas\bin\Debug\net7.0\NetTopologySuite.dll
+C:\Users\jose_\Documents\workSpace\ef-core-peliculas\bin\Debug\net7.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\jose_\Documents\workSpace\ef-core-peliculas\obj\Debug\net7.0\EFCoreSqlServerNetTopologySuite.cs

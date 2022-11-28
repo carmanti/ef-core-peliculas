@@ -1,4 +1,7 @@
+using System.Diagnostics.Tracing;
+using ef_core_peliculas;
 using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +16,13 @@ builder.Services.AddSwaggerGen();
 // En la csproj se crea el connection string
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
-            opciones.UseSqlServer(connectionString, sqlServer => sqlServer.UseNetTopologySuite()));
+{
+    opciones.UseSqlServer(connectionString, sqlServer => sqlServer.UseNetTopologySuite());
+    opciones.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+}
+
+            );
+
 
 var app = builder.Build();
 

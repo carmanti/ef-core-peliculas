@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-
-class Pelicula
+namespace ef_core_peliculas.Entidades;
+public class Pelicula
 {
     public int Id { get; set; }
     public string Titulo { get; set; }
@@ -9,4 +9,7 @@ class Pelicula
 
     // [Unicode(false)]
     public string PosterURL { get; set; }
+    public List<Genero> Generos { get; set; }//Relacion muchos a muchos no controlada Pelicula Genero
+    public HashSet<SalaDeCine> SalasDeCine { get; set; }//Relacion muchos a muchos no controlada Pelicula Sala De Cine
+    public HashSet<PeliculaActor> PeliculasActores { get; set; }
 }
