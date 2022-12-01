@@ -1,13 +1,15 @@
+using System.Reflection.Metadata;
 using System.Diagnostics.Tracing;
 using ef_core_peliculas;
 using Microsoft.EntityFrameworkCore;
-
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+// builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(opciones => opciones.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -23,6 +25,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
 
             );
 
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
