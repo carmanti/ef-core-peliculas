@@ -10,6 +10,6 @@ public class Pelicula
     // [Unicode(false)]
     public string PosterURL { get; set; }
     public List<Genero> Generos { get; set; }//Relacion muchos a muchos no controlada Pelicula Genero
-    public HashSet<SalaDeCine> SalasDeCine { get; set; }//Relacion muchos a muchos no controlada Pelicula Sala De Cine
-    public HashSet<PeliculaActor> PeliculasActores { get; set; }
+    public List<SalaDeCine> SalasDeCine { get; set; }//Relacion muchos a muchos no controlada Pelicula Sala De Cine
+    public List<PeliculaActor> PeliculasActores { get; set; }
 }

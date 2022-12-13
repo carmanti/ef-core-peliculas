@@ -8,6 +8,7 @@ class ActorConfig : IEntityTypeConfiguration<Actor>
     {
         builder.Property(prop => prop.Nombre).HasMaxLength(150).IsRequired();
         // builder.Property(prop => prop.FechaNacimiento).HasColumnType("date");
+        builder.Property(x => x.Nombre).HasField("_nombre");
     }
 }
 

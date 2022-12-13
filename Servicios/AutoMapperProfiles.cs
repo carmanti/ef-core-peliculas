@@ -28,5 +28,9 @@ public class AutoMapperProfiles : Profile
         // .ForMember(dto => dto.Cines, ent => ent.MapFrom(prop => prop.SalasDeCine.Select(s => s.Cine)))
         // .ForMember(dto => dto.Actores, ent => ent.MapFrom(prop => prop.PeliculasActores.Select(s => s.Actor)));
 
+        CreateMap<PeliculaCreacionDTO, Pelicula>()
+        .ForMember(ent => ent.Generos, dto => dto.MapFrom(campo => campo.Generos.Select(id => new Genero() { Identificador = id })));
+
+        CreateMap<ActorCreacionDTO, Actor>();
     }
 }

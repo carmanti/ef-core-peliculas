@@ -80,3 +80,5 @@ C:\Users\jose_\Documents\workSpace\ef-core-peliculas\bin\Debug\net7.0\NetTopolog
 C:\Users\jose_\Documents\workSpace\ef-core-peliculas\obj\Debug\net7.0\EFCoreSqlServerNetTopologySuite.cs
 C:\Users\jose_\Documents\workSpace\ef-core-peliculas\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\jose_\Documents\workSpace\ef-core-peliculas\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jose_\Documents\workSpace\ef-core-peliculas\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\jose_\Documents\workSpace\ef-core-peliculas\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll

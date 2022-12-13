@@ -16,4 +16,5 @@ public class Genero
     // [Column("NombreGenero")] -> Cambia el nombre de la columna
     public string Nombre { get; set; }
     public HashSet<Pelicula> Peliculas { get; set; } //RElacion muchos a muchos no controlada
+    public bool EstaBorrado { get; set; }
 }

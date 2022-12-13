@@ -17,5 +17,8 @@ public class GeneroConfig : IEntityTypeConfiguration<Genero>
         // modelBuilder.Entity<Genero>().Property(prop => prop.Nombre).HasMaxLength(150).IsRequired().HasColumnName("NombreGenero");
         //Para cambiar de nombre a la tabla
         // modelBuilder.Entity<Genero>().ToTable(name: "tablaGenero", schema: "Peliculas");
+
+        //Filtros a nivel de modelo
+        builder.HasQueryFilter(g => !g.EstaBorrado);
     }
 }
